@@ -1,3 +1,6 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
 .image--qc{
     position: fixed;
     margin-top: -123.5px;
@@ -48,6 +51,8 @@
 #giohang--logo{
     margin-top: 8px;
     margin-left: 50px;
+    font-size:48px;
+    color: white;
 }
 .giohang--title{
     color: #f1f1f1;
@@ -77,6 +82,7 @@
 }
 .table--menu{
     width: 100%;
+    padding-top: 10px;
 }
 th{
     width: 25%;
@@ -105,7 +111,7 @@ table, tr {
 .menu--product--left{
     border: 1px solid black;
     border-radius: 10px;
-    width: 250px;
+    min-width: 200px;
     height: 280px;
     margin-top: 10px;
     margin-left: 20px;
@@ -113,54 +119,45 @@ table, tr {
     margin-bottom: 200px;
     padding-bottom: 0px;
 }
-#menu ul {
-    background: #fdfdfd;
-    width: 100%;
-    /* min-width: 145px; */
-    padding: 0;
-    list-style-type: none;
-    text-align: left;
-}
-#menu li {
-    width: auto;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 1em;
-}
-#menu li a {
-    text-decoration: none;
-    color: #0C0A0A;
-    font-weight: bold;
+#menu ul{
+    /* float: left; */
+    list-style: none;
+    padding-inline-start: 5px;
+    padding-inline-end: 0px;
     display: block;
+}
 
+#menu ul li a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.3cm 6px;
 }
-#menu li:hover {
-    background: #f1f1f1;
+#menu li a:hover{
+    color: white;
+    background: orange;
 }
-#menu ul li {
-    position: relative;
-}
-#menu .sub-menu {
+#menu li ul{
     position: absolute;
-    left: 250px; ;
-    top: 0;
-    border: 1px solid rgb(174, 174, 174);
-    border-radius: 5px;
-}
-#menu .sub-menu {
-    /* position: absolute; */
-    left: 250px;
-    top: 0;
     display: none;
+    width: 200px;
+    left: 225px;
+    margin-top: -41px;
+    background-color: white;
+    /* transition: 1S ease; */
 }
-#menu li:hover .sub-menu {
+#menu li:hover ul{
     display: block;
 }
+#menu ul li ul li {
+    width:100% ;
+    border: 1px solid rgb(96, 99, 96);
+}
+
 .g1{
     border-bottom: 1px solid rgb(174, 174, 174);
 }
-
-
 
 #slide--show {
     overflow: hidden;
@@ -189,12 +186,7 @@ table, tr {
     80% {margin-left: -1456px;}
 }
 
-/* .f1{ margin-left: 30px;} */
-/* .qc1{
-    margin-top: 15px;
-    margin-left: 20px;
-    border-radius: 10px;
-} */
+
 .QC--right--1{
     margin-top: 15px;
     margin-left: 20px;
@@ -205,34 +197,6 @@ table, tr {
     margin-left: 20px;
     border-radius: 10px;
 }
-/* .QC--center{
-    width: 800px;
-    height: 330px;
-    margin-right: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-left: 100px;
-} */
-/* .QC--top--center{
-    height: 300px;
-}
-.QC--bottom--center{
-    height: 100px;
-} */
-/* .t1{
-    margin-top: 15px;
-    margin-right: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.bang2{
-    width: 603px;
-    height: 40px;
-    margin-top: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-} */
 
 .title--product--1{
     display: flex;
@@ -392,6 +356,86 @@ table, tr {
 .khung--footer--right{
     width: 25%;
 }
+.menu-button{
+    position: absolute;
+    display: none;
+}
+/* mobile device */
+@media screen and (max-width:480px){
+    .image--qc img{
+        width: 100%;
+        
+    }
+    .navbar--logo{
+        width: 100%;
+        height: 45px;
+        background-color: #f50000;
+        position: fixed;
+        margin-top: 56px;
+        display: flex;
+        
+    }
+    .navbar--logo img{
+        padding-top: 10px;
+        width: 100px;
+        height: 26px;
+    }
+    .khung--search{
+        margin-top: 10px;
+        margin-left: 10px;
+        display: flex;
+    }
+    .input--timsanpham{
+        width: 120px;
+        height: 20px;
+        border:2px solid rgba(255, 255, 255, 0);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-left: -10px;
+    }
 
+    .btn--search{
+        float: right;
+        width: 30px;
+        height: 26px;
+        background: #484848;
+        color: white;
+        /* border: 1px solid grey; */
+        border-left: none;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 20px;
+    }
+    
+
+    #giohang--logo{
+        margin-top: 10px;
+        margin-left: 30px;
+        font-size:25px;
+        color: white;
+    }
+    .giohang--title{
+        display: none;
+    }
+    .sdt--muahang{
+       display: none;
+    }
+    .btn--login{
+        width: 30px;
+        margin-top: 15px;
+        display: none;
+        /* margin-left: 50px; */
+    }
+    #menu-button{
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-left: 60px;
+        padding-top: 5px;
+    }
+    
+}
 
 
