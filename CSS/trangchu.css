@@ -361,7 +361,7 @@ table, tr {
     display: none;
 }
 /* mobile device */
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px){
     .image--qc img{
         width: 100%;
         
@@ -434,6 +434,99 @@ table, tr {
         height: 35px;
         margin-left: 60px;
         padding-top: 5px;
+    }
+    .table--menu{
+        display: none;
+        width: 100%;
+        padding-top: 10px;
+    }
+    .menu--product--left{
+        border: 1px solid black;
+        border-radius: 10px;
+        min-width: 200px;
+        height: 280px;
+        margin-top: -500px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 200px;
+        padding-bottom: 0px;
+    }
+    #menu ul{
+        /* float: left; */
+        list-style: none;
+        padding-inline-start: 5px;
+        padding-inline-end: 0px;
+        display: block;
+    }
+    
+    #menu ul li a{
+        display: block;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.3cm 6px;
+    }
+    #menu li a:hover{
+        color: white;
+        background: orange;
+    }
+    #menu li ul{
+        position: absolute;
+        display: none;
+        width: 200px;
+        left: 225px;
+        margin-top: -41px;
+        background-color: white;
+        /* transition: 1S ease; */
+    }
+    #menu li:hover ul{
+        display: block;
+    }
+    #menu ul li ul li {
+        width:100% ;
+        border: 1px solid rgb(96, 99, 96);
+    }
+    
+    .g1{
+        border-bottom: 1px solid rgb(174, 174, 174);
+    }
+    #slide--show {
+        overflow: hidden;
+        height: 150px;
+        width: 100%;
+        /* margin: 0 auto; */
+        margin-top: 15px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-left: -200px;
+    }
+    .slide-wrapper {
+        width: 2912px;
+        -webkit-animation: slide 14s ease infinite;
+    }
+    .slide {
+        float: left;
+        height: 330px;
+        width: 728px;
+    }
+    @-webkit-keyframes slide {
+        20% {margin-left: 0px;}
+        30% {margin-left: -728px;}
+        50% {margin-left: -728px;}
+        60% {margin-left: -1456px;}
+        80% {margin-left: -1456px;}
+    }
+    .QC--right--1{
+        display: none;
+        margin-top: 15px;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+    .QC--right--2{
+        display: none;
+        margin-top: 15px;
+        margin-left: 20px;
+        border-radius: 10px;
     }
     
 }
