@@ -117,3 +117,22 @@ body{
 .tablet{
     margin-top: 150px;
 }
+.khung--footer{
+    display: flex;
+    width: 100%;
+}
+.khung--footer--left{
+    width: 25%;
+}
+.khung--footer--center--left{
+    width: 25%;
+}
+.khung--footer--center--right{
+    width: 25%;
+}
+.khung--footer--right{
+    width: 25%;
+}
+#menu-button{
+    display: none;
+}
