@@ -2,7 +2,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 :root{
-    --main-color:#fd4646 ;
+    --main-color:#f50000 ;
     --text-color:#171427 ;
     --bg-color: #fff;
 }
@@ -109,12 +109,17 @@ body{
     padding-top: 0px;
     padding-bottom: 10px;
 }
+.badge {
+    color: #fff;
+    background: #ea9d02;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
 .price{
     color: var(--main-color);
 }
 .img-products{
-    min-width: 200px;
-    max-width: 220px;
+   width: 200px;
 }
 .product-title{
     font-size: medium;
@@ -124,6 +129,28 @@ body{
     justify-content: space-between;
     padding:1.5rem 1rem;
 }
+.button{
+    width: 100%;
+    text-align: center;
+}
+.button-detail-product{
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    background: #ea9d02;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--bg-color);
+    transition: 0.4s;
+}
+.product-box a{
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-detail-product:hover{
+    background: #cd1817;
+    padding: 0.5rem 2rem;
+}
+
 .tablet{
     margin-top: 150px;
 }
